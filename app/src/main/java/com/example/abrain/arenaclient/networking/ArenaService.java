@@ -1,9 +1,12 @@
 package com.example.abrain.arenaclient.networking;
 
 import com.example.abrain.arenaclient.viewchannel.Block;
+import com.example.abrain.arenaclient.viewchannel.Content;
 
 import java.util.List;
 
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -16,10 +19,7 @@ import retrofit2.http.GET;
 public interface ArenaService {
 
     @GET("v2/channels/modern-love/contents")
-    Call<List<Block>> block();
+    Call<Content> block();
 
-    public static final Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("http://api.are.na/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build();
+
 }
