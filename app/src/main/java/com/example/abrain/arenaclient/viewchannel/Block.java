@@ -12,7 +12,15 @@ public class Block {
     @Expose
     private int id;
 
+    @SerializedName("image")
+    @Expose
+    private Image image;
+
     public int getId(){
         return id;
+    }
+
+    public Image getImage(){
+        return image;
     }
 }

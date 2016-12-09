@@ -42,7 +42,7 @@ public class ChannelActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Content> call, Response<Content> response) {
                 Log.d(TAG, "success");
-                Log.d(TAG, response.body().getContent().get(1).getId()+"");
+                Log.d(TAG, response.body().getContent().get(3).getImage().getDisplay().getUrl() +"");
             }
 
             @Override
