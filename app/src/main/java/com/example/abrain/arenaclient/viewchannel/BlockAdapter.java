@@ -42,7 +42,11 @@ public class BlockAdapter extends ArrayAdapter {
         else {
             String url = block.get(position).getImage().getDisplay().getUrl();
             ImageView img = (ImageView)convertView.findViewById(R.id.imageView);
-            Picasso.with(getContext()).load(url).into(img);
+            Picasso.with(getContext())
+                    .load(url)
+                    .fit()
+                    .centerCrop()
+                    .into(img);
             Log.d(TAG, url);
         }
 
