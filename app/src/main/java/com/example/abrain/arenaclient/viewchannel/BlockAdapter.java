@@ -49,13 +49,6 @@ public class BlockAdapter extends ArrayAdapter {
                     .into(img);
             Log.d(TAG, url);
         }
-
-
-//        Log.d(TAG, url);
-//        //String url = block.get(position+3).getImage().getDisplay().getUrl();
-//        ImageView img = (ImageView)convertView.findViewById(R.id.imageView);
-//        Picasso.with(getContext()).load(url).into(img);
-
         return convertView;
     }
 }

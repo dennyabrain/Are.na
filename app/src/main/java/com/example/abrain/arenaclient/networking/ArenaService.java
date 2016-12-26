@@ -18,8 +18,9 @@ import retrofit2.http.GET;
 
 public interface ArenaService {
 
-    @GET("v2/channels/modern-love/contents")
+    @GET("v2/channels/ttlandscape/contents")
     Call<Content> block();
 
-
+    //ttlandscape
+    //art-on-the-internet
 }

@@ -1,5 +1,16 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+apply plugin: 'android-apt'
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
@@ -30,4 +41,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.airbnb.android:epoxy:1.5.0'
+    apt 'com.airbnb.android:epoxy-processor:1.5.0'
 }
+

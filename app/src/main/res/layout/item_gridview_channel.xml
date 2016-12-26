@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:background="#242423">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         app:srcCompat="@android:color/holo_blue_bright"
-        android:id="@+id/imageView" />
+        android:id="@+id/imageView"/>
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
+    <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:background="#35FF69"
+        android:text="her : new love"
+        android:layout_gravity="bottom|end"
+        android:padding="2dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#242423"/>
 
-</LinearLayout>
+</FrameLayout>
